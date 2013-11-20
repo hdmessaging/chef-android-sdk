@@ -50,6 +50,17 @@ if node['platform'] == 'ubuntu'
   end
 end
 
+
+
+if node['platform'] == 'centos'
+  package 'libgl1-mesa-dev'
+  #
+  # Install required 32-bit libraries on 64-bit platforms
+  #
+  package 'libstcd++.i686'
+  package 'glibc.i686'
+  package 'zlib.i686'
+end
 #
 # Download and setup android-sdk tarball package
 #
