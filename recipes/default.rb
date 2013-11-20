@@ -53,7 +53,7 @@ end
 
 
 if node['platform'] == 'centos'
-  package 'libgl1-mesa-dev'
+  package 'mesa-libGL-devel'
   #
   # Install required 32-bit libraries on 64-bit platforms
   #
