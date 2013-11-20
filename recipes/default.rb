@@ -57,7 +57,7 @@ if node['platform'] == 'centos'
   #
   # Install required 32-bit libraries on 64-bit platforms
   #
-  package 'libstcd++.i686'
+  package 'libstdc++.i686'
   package 'glibc.i686'
   package 'zlib.i686'
 end
